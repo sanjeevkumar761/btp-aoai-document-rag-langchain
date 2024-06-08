@@ -1,0 +1,9 @@
+---
+applications:
+- name: aoai-document-rag-langchain
+  random-route: true
+  path: ./
+  memory: 128M
+  buildpacks: 
+  - python_buildpack
+  command: python server.py
